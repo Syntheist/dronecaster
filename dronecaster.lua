@@ -92,7 +92,7 @@ function init()
 	 end)
 
 	 --params:add_control("drone","drone", controlspec.new(1, #drones, "lin", 0, drone_default, "drone", 1/(#drones-1)))
-	 params:add_option("drone", "drone", drones)
+	 params:add_option("drone", "drone", drones, drone_default)
 	 params:set_action("drone", play_drone)
 	 engine.amp(amp_default)
 	 engine.hz(hz_default)
